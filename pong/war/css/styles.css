@@ -1,0 +1,231 @@
+/* Copyright (c) 2015 Dave and George */
+
+body {
+	padding-top: 70px;
+}
+
+.col1{
+    background: #5C7080;
+}
+
+.col2{
+    background: #6BC0FF;
+}
+
+.col3{
+    background: #E8AA4C;
+}
+
+.col4{
+    background: #FF384E;
+}
+
+.fill {
+	width: 100%;
+}
+
+.black{
+	color: black;
+}
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+td, 
+th {
+	border: 1px solid black;
+	padding-left: .5em;
+}
+
+thead {
+	background: lightgreen;
+}
+
+tbody {
+	background: white;
+}
+.text-left{
+	text-align: left;
+}
+
+td {
+	text-align: left;
+	vertical-align: top; 
+}
+
+td a span.glyphicon {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.glyphicon-plus-sign {
+	color: white;	
+}
+
+.glyph-green{
+	color: green;
+}
+
+.glyph-red{
+	color: red;
+}
+
+.glyph-yellow{
+	color: yellow;
+}
+
+.month-height {
+	height: 3em;
+}
+
+.today {
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-right: .5em;
+}
+
+.display-month {
+	padding-left: .5em;
+	padding-right: .5em;
+	border: 1px solid lightgray;
+}
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.body
+{
+	background-image: url('../img/dnabackground.jpg');
+	background-repeat: repeat;
+	background-size: 170% auto;
+	display: compact;
+	height: 100%;
+	padding-top: 70px;
+}
+.buttonblock{
+	position: fixed;
+	top: 50%;
+	left: 50%
+}
+.calendar-group{
+	padding-bottom: 15px;
+}
+.display-month {
+	padding-left: .5em;
+	padding-right: .5em;
+	border: 1px solid lightgray;
+}
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.glyph-red {
+	color: red;	
+}
+.glyph-green{
+	color: green;
+}
+.glyph-yellow{
+	color: yellow;
+}
+.login-title{
+    color: #555;
+    font-size: 25px;
+    font-weight: 400;
+    display: block;
+}
+.month-height {
+	height: 3em;
+}
+.navbar-white{
+	color: white;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+.pong{
+	color: white;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+
+
+
+

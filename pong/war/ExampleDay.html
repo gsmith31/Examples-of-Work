@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<title>Example Day</title>
+</head>
+<body class="body">
+	<div class="container">
+		<div class="navbar navbar-default navbar-inverse navbar-fixed-top"
+			role="navigation">
+			<div class="container-fluid navbar-white">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#collapse">
+						<span class="sr-only">Toggle Navigation</span> <span
+							class="glyphicon glyphicon-arrow-down white"></span> MENU
+					</button>
+					<a class="navbar-brand" href="HomePage.html"><span
+						class="glyphicon glyphicon-cutlery"></span> PONG</a>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="ExampleDay.html">My Menus</a></li>
+						<li><a href="EditDay.html">Edit</a></li>
+						<li><a href="#">My Archive</a></li>
+						<li><a href="#">Search</a></li>
+						<li><a href="#">Instructions</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-print"></span>
+								Print Menu</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown">My Profile <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" data-toggle="modal"
+									data-target="#nutrition-targets">Personal Nutrition Targets</a></li>
+								<li><a href="#">Account Information</a></li>
+								<li><a href="controller?action=edit">Edit Profile</a></li>
+							</ul></li>
+						<li><a href="HomePage.html">Logout</a></li>
+					</ul>
+					<div class="modal fade text-black" id="nutrition-targets"
+						tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"
+										aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Nutrition
+										Targets</h4>
+								</div>
+								<div class="modal-body">
+									<h6>
+										70% Energy: <strong>About 1463 kcal</strong>
+									</h6>
+									<h6>
+										Protien: <strong>38 g</strong>
+									</h6>
+									<h6>
+										Saturated Fat: <strong>Under 22 g</strong>
+									</h6>
+									<h6>
+										Cholesterol: <strong>298 mg</strong>
+									</h6>
+									<h6>
+										Folate: <strong>596 µg</strong>
+									</h6>
+									<h6>
+										Added Floate: <strong>131 µg</strong>
+									</h6>
+									<h6>
+										Vitamin C: <strong>149 mg</strong>
+									</h6>
+									<h6>
+										Iron: <strong>18 mg</strong>
+									</h6>
+									<h6>
+										Sodium: <strong>Under 1519 mg</strong>
+									</h6>
+									<h6>
+										Calcium: <strong>994 mg</strong>
+									</h6>
+									<h6>
+										Magnesium: <strong>Over 308 mg</strong>
+									</h6>
+									<h6>
+										Red Meat: <strong>Under 99 g</strong>
+									</h6>
+									<h6>
+										Fruits/Veggies: <strong>Over 596 g</strong>
+									</h6>
+									<h6>
+										Vitamin A: <strong>2319 UI</strong>
+									</h6>
+									<h6>
+										Preformed Vit.A: <strong>2319 UI</strong>
+									</h6>
+									<h6>
+										Beta-Carotene: <strong>1740 UI</strong>
+									</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-center calendar-group pull-left">
+				<a href="controller?action=previous"><button type="button"
+						class="btn btn-primary">
+						<span class="glyphicon glyphicon-menu-left"></span>
+					</button></a>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle"
+						data-toggle="dropdown">
+						<span class="glyphicon glyphicon-calendar"></span> February 16,
+						2015 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="ExampleDay.html">Day</a></li>
+						<li><a href="#">Week</a></li>
+						<li><a href="Calendar.html">Month</a></li>
+					</ul>
+				</div>
+				<a href="controller?action=next"><button type="button"
+						class="btn btn-primary">
+						<span class="glyphicon glyphicon-menu-right"></span>
+					</button></a> <a href="controller?action=calendar"><button type="button"
+						class="btn btn-primary pull-right">
+						Day Nutrients <span class="glyphicon glyphicon-menu-hamburger"></span>
+					</button></a>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Breakfast panel -->
+			<div class="col-md-4">
+				<div class="panel panel-success" id="accordian">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordian" href="#b-one"
+								aria-expanded="true" aria-controls="b-one"> Breakfast and
+								Snacks </a>
+						</h3>
+					</div>
+					<div id="b-one" class="panel-collapse collapse in" role="tabpanel"
+						aria-labelledby="b-one">
+						<div class="panel-body">
+							<div class="list-group">
+								<a href="#" class="list-group-item" data-toggle="modal"
+									data-target="#breakfast_one">KELLOGG's Shredded Wheat
+									Miniatures, 15 Biscuits</a> <a href="#" class="list-group-item"
+									data-toggle="modal" data-target="#breakfast_two">Silk Light
+									Plain Soymilk, 1.5 cups</a> <a href="#" class="list-group-item">1
+									Medium sized Banana</a> <a href="#" class="list-group-item">Orange
+									Juice med.glass (6 oz)</a>
+							</div>
+							<div class="modal fade" id="breakfast_one" tabindex="-1"
+								role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="myModalLabel">Nutritional
+												Information</h4>
+										</div>
+										<div class="modal-body">
+											<h6>
+												Energy: <strong>50 kcal</strong>
+											</h6>
+											<h6>
+												Protien: <strong>1.65 g</strong>
+											</h6>
+											<h6>
+												Saturated Fat: <strong>0.06 g</strong>
+											</h6>
+											<h6>
+												Cholesterol: <strong>0 mg</strong>
+											</h6>
+											<h6>
+												Folate: <strong>19 µg</strong>
+											</h6>
+											<h6>
+												Added Floate: <strong>15 µg</strong>
+											</h6>
+											<h6>
+												Vitamin C: <strong>0 mg</strong>
+											</h6>
+											<h6>
+												Iron: <strong>4.5 mg</strong>
+											</h6>
+											<h6>
+												Sodium: <strong>1 mg</strong>
+											</h6>
+											<h6>
+												Calcium: <strong>6 mg</strong>
+											</h6>
+											<h6>
+												Magnesium: <strong>13 mg</strong>
+											</h6>
+											<h6>
+												Red Meat: <strong>0 g</strong>
+											</h6>
+											<h6>
+												Fruits/Veggies: <strong>0 g</strong>
+											</h6>
+											<h6>
+												Vitamin A: <strong>0 UI</strong>
+											</h6>
+											<h6>
+												Preformed Vit.A: <strong>0 UI</strong>
+											</h6>
+											<h6>
+												Beta-Carotene: <strong>0 UI</strong>
+											</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="breakfast_two" tabindex="-1"
+								role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="myModalLabel">Nutritional
+												Information</h4>
+										</div>
+										<div class="modal-body">
+											<h6>
+												Energy: <strong>105 kcal</strong>
+											</h6>
+											<h6>
+												Protien: <strong>9 g</strong>
+											</h6>
+											<h6>
+												Saturated Fat: <strong>0 g</strong>
+											</h6>
+											<h6>
+												Cholesterol: <strong>0 mg</strong>
+											</h6>
+											<h6>
+												Folate: <strong>36 µg</strong>
+											</h6>
+											<h6>
+												Added Floate: <strong>0 µg</strong>
+											</h6>
+											<h6>
+												Vitamin C: <strong>0 mg</strong>
+											</h6>
+											<h6>
+												Iron: <strong>1.61 mg</strong>
+											</h6>
+											<h6>
+												Sodium: <strong>179 mg</strong>
+											</h6>
+											<h6>
+												Calcium: <strong>449 mg</strong>
+											</h6>
+											<h6>
+												Magnesium: <strong>59 mg</strong>
+											</h6>
+											<h6>
+												Red Meat: <strong>0 g</strong>
+											</h6>
+											<h6>
+												Fruits/Veggies: <strong>0 g</strong>
+											</h6>
+											<h6>
+												Vitamin A: <strong>752 UI</strong>
+											</h6>
+											<h6>
+												Preformed Vit.A: <strong>752 UI</strong>
+											</h6>
+											<h6>
+												Beta-Carotene: <strong>0 UI</strong>
+											</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Lunch panel -->
+			<div class="col-md-4">
+				<div class="panel panel-success" id="accordian">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordian" href="#l-one"
+								aria-expanded="true" aria-controls="l-one">Lunch and Snacks</a>
+						</h3>
+					</div>
+					<div id="l-one" class="panel-collapse collapse in" role="tabpanel"
+						aria-labelledby="l-one">
+						<div class="panel-body">
+							<div class="list-group">
+								<a href="#" class="list-group-item">Chili Con Carne, 2 Cups</a>
+								<a href="#" class="list-group-item">Oven-fried Sweet
+									potatoes, half a cup</a> <a href="#" class="list-group-item">Green
+									Asparagus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Dinner panel -->
+			<div class="col-md-4">
+				<div class="panel panel-success" id="accordian">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordian" href="#d-one"
+								aria-expanded="true" aria-controls="d-one">Dinner and Snacks</a>
+						</h3>
+					</div>
+					<div id="d-one" class="panel-collapse collapse in" role="tabpanel"
+						aria-labelledby="d-one">
+						<div class="panel-body">
+							<div class="list-group">
+								<a href="#" class="list-group-item">McDonalds EggMcMuffin, 1
+									Sandwich</a> <a href="#" class="list-group-item">McDonalds
+									Fruit & Walnut Snack, 1 pkg</a> <a href="#" class="list-group-item">Grapfruit
+									red or pink, whole fruit</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="row">
+			<p>
+				<small>Copyright &copy; 2015 Martin Kohlmeier Nutrigen</small>
+			</p>
+		</footer>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
